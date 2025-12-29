@@ -1,4 +1,7 @@
-#  MERN Task Management System  Live Link: [https://task-hub-snowy.vercel.app/](https://task-hub-snowy.vercel.app/).
+#  MERN Task Management System 
+
+
+Live Link: [https://task-hub-snowy.vercel.app/](https://task-hub-snowy.vercel.app/).
 
 A modern, production-ready Task Management application built with the MERN stack (MongoDB, Express, React, Node.js). Features secure authentication, real-time UI updates, and advanced productivity insights.
 
@@ -43,14 +46,14 @@ A modern, production-ready Task Management application built with the MERN stack
 - MongoDB Atlas Account (or local MongoDB)
 
 ### 1. Clone the Repository
-`bash
+```bash
 git clone <your-repo-url>
 cd Task-3
-` 
+``` 
 
 ### 2. Install Dependencies
 Install dependencies for both root, frontend, and backend:
-`bash
+```bash
 # Root
 npm install
 
@@ -61,31 +64,31 @@ npm install
 # Frontend
 cd ../frontend
 npm install
-` 
+``` 
 
 ### 3. Environment Setup
 
 **Backend (backend/.env):**
-`env
+```env
 NODE_ENV=development
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_super_secret_key
 JWT_EXPIRES_IN=30d
 CORS_ORIGIN=http://localhost:5173
-` 
+```
 
 **Frontend (frontend/.env):**
 *(Optional for local dev, required for production)*
-`env
+```env
 VITE_API_BASE_URL=http://localhost:5000
-` 
+``` 
 
 ### 4. Run Locally
 From the root directory:
-`bash
+```bash
 npm run dev
-` 
+``` 
 This will start both the Backend (Port 5000) and Frontend (Port 5173) concurrently.
 
 ##  Deployment
@@ -98,7 +101,7 @@ This project is configured for split deployment:
 
 ##  Project Structure
 
-` 
+```
 Task-3/
  backend/             # Express API
     src/
@@ -113,6 +116,6 @@ Task-3/
        context/     # Auth state management
        lib/         # API utilities
  DEPLOY.md            # Deployment instructions
-` 
+```
 
 
